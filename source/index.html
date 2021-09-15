@@ -25,9 +25,86 @@
   <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+  <header>
+    <aside class="sidepanel">
+      <div class="sidepanel__social">
+        <a href="#" class="sidepanel__social-link">
+          <img src="img/icons/Facebook.svg" alt="facebook" class="sidepanel__social-icon" width="20" height="20">
+        </a>
+        <a href="#" class="sidepanel__social-link">
+          <img src="img/icons/Instagram.svg" alt="instagram" class="sidepanel__social-icon" width="20" height="20">
+        </a>
+        <a href="#" class="sidepanel__social-link">
+          <img src="img/icons/Github.svg" alt="GitHub" class="sidepanel__social-icon" width="20" height="20">
+        </a>
+      </div>
+      <div class="sidepanel__divider"></div>
+      <span class="sidepanel__text">Социальные сети</span>
+    </aside>
+
+    <div class="menu">
+      <div class="menu__block">
+        <button class="menu__close">
+          <img src="img/icons/Close.svg" alt="close menu" width="29" height="30">
+        </button>
+        <nav class="menu__nav">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">ПРО МЕНЯ</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">МОЙ ОПЫТ</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">МОИ НАВЫКИ</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">МОИ РАБОТЫ</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">ПРАЙС-ЛИСТ</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">КОНТАКТЫ</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="menu__social">
+          <a href="#" class="menu__social-link">
+            <img src="img/icons/Github-normal.svg" alt="GitHub" class="menu__social-icon" width="20" height="20">
+          </a>
+          <a href="#" class="menu__social-link">
+            <img src="img/icons/Instagram-normal.svg" alt="instagram" class="menu__social-icon" width="20" height="20">
+          </a>
+          <a href="#" class="menu__social-link">
+            <img src="img/icons/Facebook-normal.svg" alt="facebook" class="menu__social-icon" width="20" height="20">
+          </a>
+        </div>
+      </div>
+      <div class="menu__overlay"></div>
+    </div>
+
+    <section class="promo">
+      <button class="promo__hamburger hamburger">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line hamburger__line--long"></span>
+        <span class="hamburger__line"></span>
+      </button>
+      <div class="container">
+        <h2 class="promo__subtitle title">Меня зовут Александра Смит</h2>
+        <h1 class="promo__title title">Я web-разработчик из города Москва</h1>
+        <div class="promo__btns">
+          <a href="#" class="promo__btn btn btn--main">Портфолио</a>
+          <a href="#" class="promo__btn btn">Про меня</a>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <script src="js/script.min.js"></script>
 
 </body>
 </html>

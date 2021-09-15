@@ -1,0 +1,44 @@
+.sidepanel {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 3;
+  width: 24px;
+  height: 350px;
+  top: 226px;
+  left: 53px;
+  align-items: center;
+}
+
+.sidepanel__social {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidepanel__social-link {
+  width: 20px;
+  height: 20px;
+  text-decoration: none;
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.sidepanel__divider {
+  height: 70px;
+  width: 2px;
+  background-color: #000000;
+  margin-top: 15px;
+}
+
+.sidepanel__text {
+  width: 150px;
+  height: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  transform: rotate(-90deg);
+  margin-top: 60px;
+}
