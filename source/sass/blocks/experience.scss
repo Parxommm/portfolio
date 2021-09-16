@@ -1,3 +1,139 @@
 .experience {
   padding-top: 120px;
 }
+
+.experience__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 136px;
+  padding: 0 65px;
+  margin-top: 60px;
+}
+
+.experiencs__column {
+  position: relative;
+  padding-left: 43px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: calc(100% - 15px);
+    bottom: 4px;
+    left: 0;
+    background-color: #000000;
+  }
+}
+
+.experiencs__column-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+
+  &::before {
+    position: absolute;
+    top: 7px;
+    left: -7px;
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: $main-color;
+  }
+}
+
+.experiencs__list {
+  list-style: none;
+  margin-top: 45px;
+}
+
+.experiencs__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 45px;
+  position: relative;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    position: absolute;
+    top: 18px;
+    left: -42px;
+    content: "";
+    width: 42px;
+    height: 1px;
+    background-color: #000000;
+  }
+}
+
+.experiencs__item-head {
+  position: relative;
+  padding-left: 56px;
+
+  @include before_circle;
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    content: "";
+    width: 20px;
+    height: 25px;
+    background-repeat: no-repeat;
+  }
+
+  &--university {
+    &::after {
+      width: 20px;
+      height: 25px;
+      background-image: url("../img/icons/University.svg");
+    }
+  }
+
+  &--courses {
+    &::after {
+      width: 25px;
+      height: 25px;
+      background-image: url("../img/icons/Courses.svg");
+    }
+  }
+
+  &--developer {
+    &::after {
+      width: 25px;
+      height: 25px;
+      background-image: url("../img/icons/Developer.svg");
+    }
+  }
+
+  &--designer {
+    &::after {
+      width: 25px;
+      height: 21px;
+      background-image: url("../img/icons/Design.svg");
+    }
+  }
+}
+
+.experiencs__item-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.experiencs__item-descr {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.experiencs__item-text {
+  font-size: 12px;
+  line-height: 18px;
+  margin-top: 12px;
+}

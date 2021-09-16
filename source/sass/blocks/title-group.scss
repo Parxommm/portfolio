@@ -1,0 +1,32 @@
+.title-group {
+  display: flex;
+  flex-direction: column;
+
+  .subtitle {
+    margin-top: 6px;
+  }
+
+  .divider {
+    width: 60px;
+    height: 3px;
+    background-color: $main-color;
+    margin-top: 1px;
+  }
+}
+
+.title-group--center {
+  align-items: center;
+
+  .title {
+    padding-left: 0;
+
+    &::before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .divider {
+    margin-top: 25px;
+  }
+}
