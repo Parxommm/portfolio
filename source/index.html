@@ -430,8 +430,52 @@
         </div>
       </div>
     </section>
-  </main>
 
+    <section class="contacts">
+      <div class="container">
+        <div class="contacts__wrapper">
+          <div class="contacts__photo">
+            <img src="img/Photo.jpg" alt="Photo" width="400" height="600">
+          </div>
+          <div class="contacts__descr">
+            <div class="contacts__title-group title-group">
+              <h2 class="contacts__title title">Контакты</h2>
+              <h3 class="contacts__subtitle subtitle">Свяжитесь со мной</h3>
+              <div class="contacts__divider divider"></div>
+            </div>
+            <p class="contacts__text">Любым удобным для вас способом:</p>
+            <div class="contacts__social">
+              <a href="#" class="contacts__social-link">
+                <img src="img/icons/Facebook-normal.svg" alt="facebook" class="contacts__social-icon" width="30" height="30">
+              </a>
+              <a href="#" class="contacts__social-link">
+                <img src="img/icons/Telegram-normal.svg" alt="Telegram" class="contacts__social-icon" width="30" height="30">
+              </a>
+              <a href="#" class="contacts__social-link">
+                <img src="img/icons/Instagram-normal.svg" alt="instagram" class="contacts__social-icon" width="30" height="30">
+              </a>
+            </div>
+            <p class="contacts__form-title">Или оставьте ваши данные и я сама вам напишу:</p>
+            <form class="contacts__form" action="#">
+              <div class="contacts__input contacts__input--name">
+                <input class="contact__name" type="text" placeholder="Введите ваше имя" name="name" id="name">
+                <label for="name">Ваше имя</label>
+              </div>
+              <div class="contacts__input contacts__input--email">
+                <input class="contact__email" type="email" name="email" id="email" placeholder="Введите вашу почту">
+                <label for="email">Ваша почта</label>
+              </div>
+              <div class="contacts__textarea">
+                <textarea class="contacts__message" name="message" id="message"></textarea>
+                <label for="message">Ваше сообщение</label>
+              </div>
+              <button class="form__btn btn btn--main">Отправить сообщение</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
   <script src="js/script.min.js"></script>
 
 </body>
