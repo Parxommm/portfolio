@@ -14,6 +14,19 @@
 .container {
   width: 1140px;
   margin: 0 auto;
+
+  @media (max-width: $desktop-L) {
+    width: 920px;
+  }
+
+  @media (max-width: $desktop) {
+    width: 728px;
+  }
+
+  @media (max-width: $tablet) {
+    width: 100%;
+    padding: 0 10px;
+  }
 }
 
 

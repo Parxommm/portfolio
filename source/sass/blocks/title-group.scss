@@ -4,6 +4,10 @@
 
   .subtitle {
     margin-top: 6px;
+
+    @media (max-width: $tablet) {
+      margin-top: 26px;
+    }
   }
 
   .divider {
@@ -11,6 +15,10 @@
     height: 3px;
     background-color: $main-color;
     margin-top: 1px;
+
+    @media (max-width: $tablet) {
+      margin-top: 15px;
+    }
   }
 }
 
@@ -26,7 +34,15 @@
     }
   }
 
+  .subtitle {
+    text-align: center;
+  }
+
   .divider {
     margin-top: 25px;
+
+    @media (max-width: $tablet) {
+      margin-top: 15px;
+    }
   }
 }

@@ -1,5 +1,13 @@
 .experience {
   padding-top: 120px;
+
+  @media (max-width: $desktop) {
+    padding-top: 80px;
+  }
+
+  @media (max-width: $tablet) {
+    padding-top: 40px;
+  }
 }
 
 .experience__wrapper {
@@ -8,6 +16,13 @@
   gap: 0 136px;
   padding: 0 65px;
   margin-top: 60px;
+
+  @media (max-width: $tablet) {
+    grid-template-columns: 1fr;
+    gap: 40px 0;
+    margin-top: 40px;
+    padding: 0;
+  }
 }
 
 .experiencs__column {

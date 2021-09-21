@@ -51,6 +51,11 @@
   height: 100%;
   padding: 140px 25px 50px 40px;
   z-index: 10;
+
+  @media (max-width: $tablet) {
+    padding-left: 20px;
+    width: 250px;
+  }
 }
 
 .menu__close {
@@ -100,7 +105,7 @@
 
 .menu__social {
   display: flex;
-  margin-left: 88px;
+  align-self: center;
 }
 
 .menu__social-link {

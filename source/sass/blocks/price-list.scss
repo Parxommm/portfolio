@@ -1,5 +1,9 @@
 .price-list {
   padding-top: 60px;
+
+  @media (max-width: $tablet) {
+    padding-top: 40px;
+  }
 }
 
 .price-list__wrapper {
@@ -9,10 +13,27 @@
   margin-top: 60px;
   padding-left: 50px;
   padding-right: 50px;
+
+  @media (max-width: $desktop) {
+    grid-template-columns: 345px 345px;
+    padding: 0;
+    margin-top: 30px;
+  }
+
+  @media (max-width: $tablet) {
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+  }
 }
 
 .price-list__list {
   list-style: none;
+
+  @media (max-width: $tablet) {
+    &:last-child {
+      margin-top: 20px;
+    }
+  }
 }
 
 .price-list__item {
@@ -44,6 +65,12 @@
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
+}
+
+.price-list__name {
+  @media (max-width: $tablet) {
+    max-width: 165px;
+  }
 }
 
 .price-list__descr {

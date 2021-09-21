@@ -8,6 +8,17 @@
   top: 226px;
   left: 53px;
   align-items: center;
+
+  @media (max-width: $desktop-L) {
+    position: absolute;
+    top: 75px;
+    left: auto;
+    right: 28px;
+  }
+
+  @media (max-width: $desktop) {
+    display: none;
+  }
 }
 
 .sidepanel__social {

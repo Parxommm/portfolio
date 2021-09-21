@@ -330,7 +330,7 @@
         <ul class="portfolio__list">
           <li class="portfolio__item">
             <a href="#" class="portfolio__link">
-              <img src="img/uber.jpg" alt="uber">
+              <img class="portfolio__img" src="img/uber.jpg" alt="uber">
             </a>
           </li>
           <li class="portfolio__item">
@@ -458,18 +458,24 @@
             <p class="contacts__form-title">Или оставьте ваши данные и я сама вам напишу:</p>
             <form class="contacts__form" action="#">
               <div class="contacts__input contacts__input--name">
-                <input class="contact__name" type="text" placeholder="Введите ваше имя" name="name" id="name">
+                <input class="contact__name" type="text" placeholder="Введите ваше имя" name="name" id="name" required>
                 <label for="name">Ваше имя</label>
               </div>
               <div class="contacts__input contacts__input--email">
-                <input class="contact__email" type="email" name="email" id="email" placeholder="Введите вашу почту">
+                <input class="contact__email" type="email" name="email" id="email" placeholder="Введите вашу почту" required>
                 <label for="email">Ваша почта</label>
               </div>
               <div class="contacts__textarea">
                 <textarea class="contacts__message" name="message" id="message"></textarea>
                 <label for="message">Ваше сообщение</label>
               </div>
-              <button class="form__btn btn btn--main">Отправить сообщение</button>
+              <div class="contacts__triggers">
+                <button class="contacts__btn btn btn--main">Отправить сообщение</button>
+                <div class="contacts__policy">
+                  <input type="checkbox" required>
+                  <span class="contacts__policy-text">Я согласен(а) с <a class="contacts__policy-link" href="/policy.html" target="_blank">политикой конфиденциальности</a></span>
+                </div>
+              </div>
             </form>
           </div>
         </div>

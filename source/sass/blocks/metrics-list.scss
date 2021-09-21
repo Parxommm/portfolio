@@ -5,6 +5,16 @@
 
   margin-top: 120px;
   list-style: none;
+
+  @media (max-width: $desktop) {
+    margin-top: 80px;
+  }
+
+  @media (max-width: $tablet) {
+    margin-top: 40px;
+    grid-template-columns: 1fr;
+    gap: 40px 0;
+  }
 }
 
 .metrics-list__item {

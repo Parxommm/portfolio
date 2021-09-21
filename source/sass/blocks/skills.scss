@@ -1,5 +1,13 @@
 .skills {
   padding-top: 120px;
+
+  @media (max-width: $desktop) {
+    padding-top: 80px;
+  }
+
+  @media (max-width: $tablet) {
+    padding-top: 40px;
+  }
 }
 
 .skills__list {
@@ -9,6 +17,21 @@
   margin-top: 60px;
   padding: 0 10px;
   list-style: none;
+
+  @media (max-width: $desktop-L) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (max-width: $desktop) {
+    grid-template-columns: auto auto;
+    justify-content: center;
+  }
+
+  @media (max-width: $tablet) {
+    margin-top: 20px;
+    grid-template-columns: auto;
+    padding: 0;
+  }
 }
 
 .skills__item {
@@ -24,7 +47,7 @@
 
   img {
     max-width: 100%;
-    object-fit: contain;
+    object-fit: cover;
     align-self: center;
   }
 }
