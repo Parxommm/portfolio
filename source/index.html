@@ -96,7 +96,7 @@
       </button>
       <div class="container">
         <h2 class="promo__title title">Меня зовут Александра Смит</h2>
-        <h3 class="promo__subtitle subtitle">Я web-разработчик из города Москва</h1>
+        <h3 class="promo__subtitle subtitle">Я web-разработчик из города Москва</h3>
         <div class="promo__btns">
           <a href="#" class="promo__btn btn btn--main">Портфолио</a>
           <a href="#" class="promo__btn btn">Про меня</a>
@@ -110,7 +110,12 @@
       <div class="container">
         <div class="about__wrapper">
           <div class="about__photo">
-            <img src="img/Photo.jpg" alt="my photo" class="about__photo" width="400" height="600">
+            <picture>
+              <source type="image/webp" media="(max-width: 768px)" srcset="img/Photo-mobile.webp 1x, img/Photo-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="img/Photo.webp 1x, img/Photo@2x.webp 2x">
+              <source media="(max-width: 768px)" srcset="img/Photo-mobile.jpg 1x, img/Photo-mobile@2x.jpg 2x">
+              <img src="img/Photo.jpg" srcset="img/Photo@2x.jpg 2x" alt="my photo" class="about__photo" width="400" height="600">
+            </picture>
           </div>
           <div class="about__descr">
             <div class="about__title-group title-group">
@@ -173,27 +178,27 @@
               </li>
               <li class="experiencs__item">
                 <div class="experiencs__item-head experiencs__item-head--courses">
-                  <h5 class="experiencs__item-title">МГТУ им. Н. Э. Баумана</h5>
-                  <span class="experiencs__item-descr">Диплом магистра | Москва (2014-2020)</span>
+                  <h5 class="experiencs__item-title">Udemy</h5>
+                  <span class="experiencs__item-descr">Курсы по Web-разработке </span>
                 </div>
                 <p class="experiencs__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. </p>
               </li>
             </ul>
           </div>
           <div class="experiencs__column">
-            <h4 class="experiencs__column-title">Образование</h4>
+            <h4 class="experiencs__column-title">Опыт работы</h4>
             <ul class="experiencs__list">
               <li class="experiencs__item">
                 <div class="experiencs__item-head experiencs__item-head--developer">
-                  <h5 class="experiencs__item-title">МГТУ им. Н. Э. Баумана</h5>
-                  <span class="experiencs__item-descr">Диплом магистра | Москва (2014-2020)</span>
+                  <h5 class="experiencs__item-title">Front-End Developer</h5>
+                  <span class="experiencs__item-descr">EPAM | Москва (2018-2019)</span>
                 </div>
                 <p class="experiencs__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. </p>
               </li>
               <li class="experiencs__item">
                 <div class="experiencs__item-head experiencs__item-head--designer">
-                  <h5 class="experiencs__item-title">МГТУ им. Н. Э. Баумана</h5>
-                  <span class="experiencs__item-descr">Диплом магистра | Москва (2014-2020)</span>
+                  <h5 class="experiencs__item-title">UI/UX Designer</h5>
+                  <span class="experiencs__item-descr">Squad Team | Москва (2018)</span>
                 </div>
                 <p class="experiencs__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. </p>
               </li>
@@ -330,32 +335,50 @@
         <ul class="portfolio__list">
           <li class="portfolio__item">
             <a href="#" class="portfolio__link">
-              <img class="portfolio__img" src="img/uber.jpg" alt="uber">
+              <picture>
+                <source type="image/webp" srcset="img/uber.webp 1x, img/uber@2x.webp 2x">
+                <img class="portfolio__img" src="img/uber.jpg" srcset="img/uber@2x.jpg 2x" alt="uber" width="280" height="280">
+              </picture>
             </a>
           </li>
           <li class="portfolio__item">
             <a href="#" class="portfolio__link">
-              <img class="portfolio__img" src="img/pulse.jpg" alt="pulse">
+              <picture>
+                <source type="image/webp" srcset="img/pulse.webp 1x, img/pulse@2x.webp 2x">
+                <img class="portfolio__img" src="img/pulse.jpg" srcset="img/pulse@2x.jpg 2x" alt="pulse" width="280" height="280">
+              </picture>
             </a>
           </li>
           <li class="portfolio__item">
             <a href="#" class="portfolio__link">
-              <img class="portfolio__img" src="img/bread.jpg" alt="bread">
+              <picture>
+                <source type="image/webp" srcset="img/bread.webp 1x, img/bread@2x.webp 2x">
+                <img class="portfolio__img" src="img/bread.jpg" srcset="img/bread@2x.jpg 2x" alt="bread" width="280" height="280">
+              </picture>
             </a>
           </li>
           <li class="portfolio__item portfolio__item--vertical">
             <a href="#" class="portfolio__link">
-              <img class="portfolio__img" src="img/plans.jpg" alt="plans">
+              <picture>
+                <source type="image/webp" srcset="img/plans.webp 1x, img/plans@2x.webp 2x">
+                <img class="portfolio__img" src="img/plans.jpg" srcset="img/plans@2x.jpg 2x" alt="plans" width="280" height="565">
+              </picture>
             </a>
           </li>
           <li class="portfolio__item">
             <a href="#" class="portfolio__link">
-              <img class="portfolio__img" src="img/ipad.jpg" alt="ipad">
+              <picture>
+                <source type="image/webp" srcset="img/ipad.webp 1x, img/ipad@2x.webp 2x">
+                <img class="portfolio__img" src="img/ipad.jpg" srcset="img/ipad@2x.jpg 2x" alt="ipad" width="280" height="280">
+              </picture>
             </a>
           </li>
           <li class="portfolio__item portfolio__item--horizontal">
             <a href="#" class="portfolio__link">
-              <img class="portfolio__img" src="img/mac.jpg" alt="mac">
+              <picture>
+                <source type="image/webp" srcset="img/mac.webp 1x, img/mac@2x.webp 2x">
+                <img class="portfolio__img" src="img/mac.jpg" srcset="img/mac@2x.jpg 2x" alt="mac" width="565" height="280">
+              </picture>
             </a>
           </li>
         </ul>
