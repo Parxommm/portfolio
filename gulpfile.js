@@ -92,6 +92,7 @@ const copy = (done) => {
     "source/*.ico",
     "source/img/**/*",
     "source/sass/libs/**/*",
+    "source/mailer/**/*",
   ], {
     base: "source"
   })

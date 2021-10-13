@@ -9,14 +9,7 @@
   left: 53px;
   align-items: center;
 
-  @media (max-width: $desktop-L) {
-    position: absolute;
-    top: 75px;
-    left: auto;
-    right: 28px;
-  }
-
-  @media (max-width: $desktop) {
+  @media (max-width: 1100px) {
     display: none;
   }
 }
@@ -31,9 +24,15 @@
   height: 20px;
   text-decoration: none;
   margin-bottom: 15px;
+  transition: 0.5s;
+  transform: rotate(-90deg);
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &:hover {
+    transform: rotate(0) scale(1.3);
   }
 }
 

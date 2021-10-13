@@ -11,12 +11,16 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .hamburger__line {
   width: 30px;
   height: 3px;
-  background-color: #000000;
+  background-color: #ffffff;
 
   &--long {
     width: 36px;
@@ -49,11 +53,11 @@
   width: 345px;
   background-color: $main-color;
   height: 100%;
-  padding: 140px 25px 50px 40px;
+  padding: 140px 25px 30px 40px;
   z-index: 10;
 
   @media (max-width: $tablet) {
-    padding-left: 20px;
+    padding: 80px 25px 30px 20px;
     width: 250px;
   }
 }
@@ -67,6 +71,14 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .menu__list {
@@ -77,6 +89,7 @@
   position: relative;
   margin-bottom: 15px;
   padding-left: 35px;
+  width: fit-content;
 
   &:last-child {
     margin-bottom: 0;
@@ -85,13 +98,25 @@
   &::before {
     content: "";
     position: absolute;
-    top: 9px;
+    top: 10px;
     left: 0;
-    width: 15px;
-    height: 15px;
-    border: 1px #000000 solid;
+    width: 10px;
+    height: 10px;
+    border: 3px #ffffff solid;
     border-radius: 50%;
   }
+
+  @media (max-width: $tablet) {
+    &::before {
+      top: 7px;
+      width: 8px;
+      height: 8px;
+    }
+  }
+}
+
+.menu__item:hover.menu__item::before {
+  background-color: #ffffff;
 }
 
 .menu__link {
@@ -99,8 +124,18 @@
   line-height: 36px;
   font-weight: 700;
   color: #ffffff;
+  text-shadow: -1px 1px 0 rgba(0, 0, 0, 0.3);
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (max-width: $tablet) {
+    font-size: 21px;
+    line-height: 28px;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
 }
 
 .menu__social {
@@ -109,10 +144,15 @@
 }
 
 .menu__social-link {
-  margin-right: 15px;
+  margin-right: 20px;
+  transition: 0.5s;
 
   &:last-child {
     margin-right: 0;
+  }
+
+  &:hover {
+    transform: scale(1.3);
   }
 }
 
